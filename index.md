@@ -1,4 +1,4 @@
-## Author- Tarun Subhash Nagdeve
+# Author :- Tarun Subhash Nagdeve
 
 
 ## Welcome to GitHub Pages
