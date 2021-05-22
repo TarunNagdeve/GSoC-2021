@@ -1,6 +1,5 @@
 # GSoC-2021
-Hello!!
-Development of a Visual Recognition model for Aztec Hieroglyphs
+## Development of a Visual Recognition model for Aztec Hieroglyphs
 
 
 
