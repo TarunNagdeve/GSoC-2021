@@ -5,7 +5,8 @@
 
 
 ## Week 1 (7th June- 13th June 2021)
- Tasks:- 1. Renaming the images in the dataset.
-         2. Preprocessing the images.
-         3. Selecting a model to train the dataset.
+ Tasks to be accomplished:-
+ 1. Renaming the images in the dataset. <br />
+ 2. Preprocessing the images. <br />
+ 3. Selecting a model to train the dataset.<br />
          
