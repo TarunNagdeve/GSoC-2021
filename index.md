@@ -5,8 +5,21 @@
 
 
 ## Week 1 (7th June- 13th June 2021)
- Tasks to be accomplished:-
+   Estimated Time- 1 week  <br />
+### Tasks to be accomplished:-
  1. Renaming the images in the dataset. <br />
  2. Preprocessing the images. <br />
- 3. Selecting a model to train the dataset.<br />
+#### Abstract
+The dataset currently consists of 1261 color images. We first need to rename the photos, as some of them have identical names that can create problems while giving the output. Also, we need some preprocessing on the images, like resizing each image to the same size, turning each image to a similar color scale, etc.
+#### Status - Completed Successfully!
+
+## Week 2 (14th June- 21th June 2021)
+   Estimated Time- 1-2 weeks  <br />
+### Tasks to be accomplished:-
+  1. Selecting a model to train the dataset.
+  2. Developing a prototype
+ 
+   
+
+
          
