@@ -11,7 +11,7 @@
  2. Preprocessing the images. <br />
 #### Abstract
 The dataset currently consists of 1261 color images. We first need to rename the photos, as some of them have identical names that can create problems while giving the output. Also, we need some preprocessing on the images, like resizing each image to the same size, turning each image to a similar color scale, etc.
-#### Status - Completed Successfully!
+### Status - Completed Successfully!
 
 ## Week 2 (14th June- 21th June 2021)
    Estimated Time:- 1-2 weeks  <br />
