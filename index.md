@@ -10,7 +10,7 @@
  1. Renaming the images in the dataset. <br />
  2. Preprocessing the images. <br />
 
-### Estimated Time required:- 1 week  <br />
+### Estimated Time Required:- 1 week  <br />
 #### Abstract
 The dataset currently consists of 1261 color images and growing. We first need to rename the photos, as some of them have identical names that can create problems while giving the output. Also, we need some preprocessing on the images, like resizing each image to the same size, turning each image to a similar color scale, etc.
 #### Status - All tasks Completed Successfully!
@@ -21,7 +21,7 @@ The dataset currently consists of 1261 color images and growing. We first need t
   1. Selecting a model to train the dataset.
   2. Developing a prototype
 
-### Estimated Time required:- 2 week  <br />
+### Estimated Time Required:- 2 week  <br />
 #### Abstract
 After comparing the results from various models, It can be concluded that the VGG16 model is giving the best results so far. The VGG16 model has 16 layers and about 138 million (approx) parameters. Here we'll  be using the last layer, i.e., the 'fc2' layer for predictions. 
 #### Status - Task 1 Completed Successfully!
@@ -31,6 +31,8 @@ Week 2 Continued..
 ### Tasks to be accomplished:-
   1. Selecting a model to train the dataset.
   2. Developing a prototype
+
+
 #### Abstract
 A working prototype can be seen here-https://colab.research.google.com/drive/14ohIvbMgDOEWgl0jf9B0XAceddsovEdN?usp=sharing
 
@@ -43,7 +45,7 @@ Note- The dataset has been updated, and more images have been added.
   1. Implimenting different techniques to increase the accuracy of the model.
   2. Using the updated dataset to train the model.
  
-### Estimated Time required:- 2 week  <br />
+### Estimated Time Required:- 2 week  <br />
   
 
 
