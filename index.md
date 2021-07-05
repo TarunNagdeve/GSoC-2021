@@ -34,7 +34,7 @@ Week 2 Continued..
 
 
 #### Abstract
-A working prototype can be seen here-https://colab.research.google.com/drive/14ohIvbMgDOEWgl0jf9B0XAceddsovEdN?usp=sharing
+A working prototype can be seen here-https://github.com/TrunnMosby/GSoC-2021/blob/gh-pages/Aztec_Glyph_Detection.ipynb
 
 #### Status - All tasks Completed Successfully!
 
