@@ -9,9 +9,9 @@ This project aims to develop a recognition system that'll identify Aztec glyphs.
 ### Timeline
 #### Coding Period Before the First Evaluation
 * [ Week 1 (7th June- 14th June 2021)](#Project-Description)
-* [Week 2 (15th June- 22th June 2021)](##Week-2)
-* [Week 3 (23th June- 30th June 2021)](##Week-3)
-* [Week 4 (1st July- 8th July 2021)](##Week-4)
+* [Week 2 (15th June- 22th June 2021)](#Week-2)
+* [Week 3 (23th June- 30th June 2021)](#Week-3)
+* [Week 4 (1st July- 8th July 2021)](#Week-4)
 
 
 
