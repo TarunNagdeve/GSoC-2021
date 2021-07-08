@@ -4,7 +4,7 @@
 ## Welcome to the project- "Development of Visual Recognition Model for Aztec Hieroglyphs."
 This project is developed by Tarun Subhash Nagdeve for Google Summer of Code 2021 with Red Hen Labs
 ### Project Description
-This project aims to develop a recognition system that'll identify Aztec glyphs. Aztec is pictographic and ideographic photo-writing. It has no alphabets but different symbolic signs that have different meanings. The dataset currently consists of 1261 color images and growing. The dataset contains three types of images: Simplex, Compound, and Atomic images. As the name, suggests Simplex and Atomic contain simple and atomic images, respectively, and Compound images are the combination of simple and atomic ones. So the main task here would be creating a neural network that'll take in an image, compare it with the ones in our system, and finally give out the five most similar images matching with the input image. Here, we'll be using pre-trained Neural Networks for training our model, like MobileNet, InceptionV3, VGG16, etc. And finally, the trained model will be deployed online so that it's accessible easily. 
+This project aims to develop a recognition system that'll identify Aztec glyphs. Aztec is pictographic and ideographic photo-writing. It has no alphabets but different symbolic signs that have different meanings. The dataset currently consists of 1255 color images and growing. The dataset contains three types of images: Simplex, Compound, and Atomic images. As the name, suggests Simplex and Atomic contain simple and atomic images, respectively, and Compound images are the combination of simple and atomic ones. So the main task here would be creating a neural network that'll take in an image, compare it with the ones in our system, and finally give out the five most similar images matching with the input image. Here, we'll be using pre-trained Neural Networks for training our model, like MobileNet, InceptionV3, VGG16, etc. And finally, the trained model will be deployed online so that it's accessible easily. 
 
 ### Timeline
 #### Coding Period Before the First Evaluation
@@ -17,7 +17,7 @@ This project aims to develop a recognition system that'll identify Aztec glyphs.
 (7th June- 14th June 2021)
   
 #### Abstract
-The dataset currently consists of 1261 color images and growing. We first need to rename the photos, as some of them have identical names that can create problems while giving the output. Also, we need some preprocessing on the images, like resizing each image to the same size, turning each image to a similar color scale, etc.
+The dataset currently consists of 1255 color images and growing. We first need to rename the photos, as some of them have identical names that can create problems while giving the output. Also, we need some preprocessing on the images, like resizing each image to the same size, turning each image to a similar color scale, etc.
 ### Tasks Accomplished:-
  * Renaming the images in the dataset. <br />
  * Preprocessing the images. <br />
@@ -26,7 +26,7 @@ The dataset currently consists of 1261 color images and growing. We first need t
 (15th June- 22th June 2021)
    
 #### Abstract
-The dataset has 1261 images, out of which only a few have more than one copy; this makes it very difficult for us to compare the results as we cannot split the data into train and test. But we visually compare the output given by each model and the time taken by them to train. Four pre-trained models have been considered here- The VGG16 model, MobileNet model, ResNet101, and Inception V3.
+The dataset has 1255 images, out of which only a few have more than one copy; this makes it very difficult for us to compare the results as we cannot split the data into train and test. But we can visually compare the output given by each model and the time taken by them to train. Four pre-trained models have been considered here- The VGG16 model, MobileNet model, ResNet101, and Inception V3.
 * ### VGG16 model 
 VGG16 is a convolution neural net (CNN ) architecture which was used to win ILSVR(Imagenet) competition in 2014.Most unique thing about VGG16 is that instead of having a large number of hyper-parameter they focused on having convolution layers of 3x3 filter with a stride 1 and always used same padding and maxpool layer of 2x2 filter of stride 2. It follows this arrangement of convolution and max pool layers consistently throughout the whole architecture. In the end it has 2 FC(fully connected layers) followed by a softmax for output. The 16 in VGG16 refers to it has 16 layers that have weights. This network is a pretty large network and it has about 138 million (approx) parameters. Here, we'll be using the FC2 layer for training our model.
 #### Architecture of VGG-16 model
@@ -42,8 +42,9 @@ VGG16 is a convolution neural net (CNN ) architecture which was used to win ILSV
 ![Screenshot (109)](https://user-images.githubusercontent.com/66901757/124785024-1eb78780-df64-11eb-98cc-40d3dfd905d3.png)
 
 
-#### Time taken for training by VGG-16 is 552.6561 seconds.
-![Screenshot (96)](https://user-images.githubusercontent.com/66901757/124782556-f3cc3400-df61-11eb-8c2e-1bf108f25eb3.png)
+#### Time taken for training by VGG-16 is 540.6529 seconds.
+![Screenshot (125)](https://user-images.githubusercontent.com/66901757/124888953-36d6e780-dff4-11eb-8143-a22a91f0cffa.png)
+
 
 * ### MobileNet model 
 MobileNet is a class of CNN that was open-sourced by Google, and therefore, this gives us an excellent starting point for training our classifiers that are insanely small and insanely fast. MobileNet uses depthwise separable convolutions. It significantly reduces the number of parameters when compared to the network with regular convolutions with the same depth in the nets. This results in lightweight deep neural networks. Here, we'll be using the last layer for training our model.
@@ -60,8 +61,9 @@ MobileNet is a class of CNN that was open-sourced by Google, and therefore, this
 ### Output-4 for MobileNet model
 ![Screenshot (105)](https://user-images.githubusercontent.com/66901757/124784447-91743300-df63-11eb-8bd6-90c69520d29c.png)
 
-#### Time taken for training by MobileNet model is 57.8996 seconds.
-![Screenshot (107)](https://user-images.githubusercontent.com/66901757/124784649-c08aa480-df63-11eb-8bfd-370b14de9979.png)
+#### Time taken for training by MobileNet model is 57.9052 seconds.
+![Screenshot (127)](https://user-images.githubusercontent.com/66901757/124892436-81a62e80-dff7-11eb-9692-1a6ddb40573b.png)
+
 
 
 * ### ResNet101 model 
@@ -79,8 +81,10 @@ ResNet is one of the most powerful deep neural networks which has achieved fanta
 ### Output-4 for ResNet101 model
 ![Screenshot (117)](https://user-images.githubusercontent.com/66901757/124787290-0183b880-df66-11eb-8abc-38cfdec93623.png)
 
-#### Time taken for training by ResNet101 model is 233.5496 seconds.
-![Screenshot (118)](https://user-images.githubusercontent.com/66901757/124787369-12342e80-df66-11eb-9990-cea45bba6be7.png)
+#### Time taken for training by ResNet101 model is 246.5761 seconds.
+![Screenshot (130)](https://user-images.githubusercontent.com/66901757/124897638-1e6acb00-dffc-11eb-9b34-2d43269eaaa0.png)
+
+
 
 * ### InceptionV3 model 
 Inception-v3 is a convolutional neural network architecture from the Inception family that makes several improvements including using Label Smoothing, Factorized 7 x 7 convolutions, and the use of an auxiliary classifer to propagate label information lower down the network (along with the use of batch normalization for layers in the sidehead).
@@ -102,28 +106,52 @@ Inception-v3 is a convolutional neural network architecture from the Inception f
 ### Output-4 for InceptionV3 model
 ![Screenshot (123)](https://user-images.githubusercontent.com/66901757/124788514-0a28be80-df67-11eb-8a1c-ba51ff3df9df.png)
 
-#### Time taken for training by InceptionV3 model is 178.2110 seconds.
-![Screenshot (119)](https://user-images.githubusercontent.com/66901757/124788585-19a80780-df67-11eb-822a-15548d645604.png)
+#### Time taken for training by InceptionV3 model is 210.2151 seconds.
+![Screenshot (132)](https://user-images.githubusercontent.com/66901757/124899592-e9f80e80-dffd-11eb-9a23-8b3cc7f00526.png)
+
 
 ### Tasks Accomplished:-
   * Training the dataset on various models.
   * Comparing the performance of each model.  
   * Selecting the best model.
+
+
 ### Conclusion
 It can be noted from the examples above that the MobileNet model seems to be the most efficient model concerning both accuracy and time.
 Hence we'll be using this model to train our data.
+
+
 ## Week 3 
 (23th June- 30th June 2021)
 #### Abstract
-A working prototype can be seen here-https://github.com/TrunnMosby/GSoC-2021/blob/gh-pages/Aztec_Glyph_Detection.ipynb
-### Tasks to be accomplished:-
+After testing various models, we've concluded that the MobileNet model seems to be the most efficient model. Next, we'll be creating a prototype using the MobileNet model and test it on various examples.
+#### Test Output-1
+![Screenshot (136)](https://user-images.githubusercontent.com/66901757/124948029-f7c58800-e02d-11eb-89f4-a8c79899fb2d.png)
+#### Test Output-2
+![Screenshot (137)](https://user-images.githubusercontent.com/66901757/124948107-090e9480-e02e-11eb-98a7-55e603dd993e.png)
+#### Test Output-3
+![Screenshot (138)](https://user-images.githubusercontent.com/66901757/124948183-17f54700-e02e-11eb-93dd-a3bb4b1cc352.png)
+#### Test Output-4
+![Screenshot (144)](https://user-images.githubusercontent.com/66901757/124949433-30b22c80-e02f-11eb-8ca4-5809eb24c3c4.png)
+#### Test Output-5
+![Screenshot (145)](https://user-images.githubusercontent.com/66901757/124949499-3e67b200-e02f-11eb-9f5d-9b7acdc96868.png)
+#### Test Output-6
+![Screenshot (146)](https://user-images.githubusercontent.com/66901757/124949557-4cb5ce00-e02f-11eb-8d2c-16edfb39bcb4.png)
+#### Test Output-7
+![Screenshot (147)](https://user-images.githubusercontent.com/66901757/124949615-5808f980-e02f-11eb-85cd-4762ae0e4a18.png)
+#### Test Output-8
+![Screenshot (148)](https://user-images.githubusercontent.com/66901757/124949659-635c2500-e02f-11eb-8838-751d2c9e0592.png)
+
+You can visit the prototype here- https://github.com/TrunnMosby/GSoC-RedHenLabs-Aztec-Glyph-Detection/blob/main/MobileNet.ipynb
+
+### Tasks Accomplished:-
   * Developing a prototype.
   * Testing of the prototype on various examples
 
 
 
 ## Week 4 
-(1st July- 8th July 2021)
+(1st July- 8th July 2021) <br />
 Note- The dataset has been updated, and more images have been added.
 
 ### Tasks to be accomplished:-
