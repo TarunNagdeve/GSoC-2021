@@ -12,6 +12,7 @@ This project aims to develop a recognition system that'll identify Aztec glyphs.
 * [Week 2 (15th June- 22th June 2021)](#Week-2)
 * [Week 3 (23th June- 30th June 2021)](#Week-3)
 * [Week 4 (1st July- 8th July 2021)](#Week-4)
+* [Week 5 (9th July- 16th July 2021)](#Week-5)
 
 ## Week 1
 (7th June- 14th June 2021)
@@ -174,7 +175,7 @@ It can be noted that the training time has increased by 1.9229 seconds and with 
   2. Checking the impact of increasing the size of the dataset on training time and accuracy. 
 
 ## Week 5 
-(9st July- 16th July 2021) <br />
+(9th July- 16th July 2021) <br />
 
   
 
