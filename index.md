@@ -153,10 +153,28 @@ You can visit the prototype here- https://github.com/TrunnMosby/GSoC-RedHenLabs-
 ## Week 4 
 (1st July- 8th July 2021) <br />
 Note- The dataset has been updated, and more images have been added.
+#### Abstract
+The updated dataset contains 1291 images. Now the new dataset has to be trained again. We'll again be using the MobileNet model to do so, and check the impact of increasing the size of the dataset on training time and accuracy. 
+#### Time taken for training the updated dataset by MobileNet model is 59.8281 seconds.
+![Screenshot (154)](https://user-images.githubusercontent.com/66901757/125607858-0e53913f-9d8f-4010-879c-e37ce31539fc.png)
+#### Test Output-1
+![Screenshot (101)](https://user-images.githubusercontent.com/66901757/124784045-2e829c00-df63-11eb-9ee1-79988e6bd526.png)
+#### Test Output-2
+![Screenshot (103)](https://user-images.githubusercontent.com/66901757/124784379-802b2680-df63-11eb-9353-67a242dd1a0f.png)
+#### Test Output-3
+![Screenshot (155)](https://user-images.githubusercontent.com/66901757/125608107-28d15876-2489-4c77-9c0e-7ba40788b8e6.png)
+#### Test Output-4
+![Screenshot (157)](https://user-images.githubusercontent.com/66901757/125608298-3c5efe81-ba67-41d6-b64e-d2b60ad05c50.png)
 
-### Tasks to be accomplished:-
-  1. Implimenting different techniques to increase the accuracy of the model.
-  2. Using the updated dataset to train the model.
+### Conclusion
+It can be noted that the training time has increased by 1.9229 seconds and with almost no change in accuracy.   
+
+### Tasks Accomplished:-
+  1. Using the updated dataset to train the model.
+  2. Checking the impact of increasing the size of the dataset on training time and accuracy. 
+
+## Week 5 
+(9st July- 16th July 2021) <br />
 
   
 
