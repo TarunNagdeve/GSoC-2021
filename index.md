@@ -13,8 +13,11 @@ This project aims to develop a recognition system that'll identify Aztec glyphs.
 * [Week 3 (23th June- 30th June 2021)](#Week-3)
 * [Week 4 (1st July- 8th July 2021)](#Week-4)
 * [Week 5 (9th July- 16th July 2021)](#Week-5)
+#### Coding Period After the First Evaluation
+* [Week 6 (17th July- 23rd July 2021)](#Week-6)
 
-## Week 1
+
+## Week-1
 (7th June- 14th June 2021)
   
 #### Abstract
@@ -23,7 +26,7 @@ The dataset currently consists of 1255 color images and growing. We first need t
  * Renaming the images in the dataset. <br />
  * Preprocessing the images. <br />
 
-## Week 2 
+## Week-2 
 (15th June- 22th June 2021)
    
 #### Abstract
@@ -43,7 +46,7 @@ VGG16 is a convolution neural net (CNN ) architecture which was used to win ILSV
 ![Screenshot (109)](https://user-images.githubusercontent.com/66901757/124785024-1eb78780-df64-11eb-98cc-40d3dfd905d3.png)
 
 
-#### Time taken for training by VGG-16 is 540.6529 seconds.
+#### Time taken for training by VGG-16 is 1,080.1289 seconds.
 ![Screenshot (125)](https://user-images.githubusercontent.com/66901757/124888953-36d6e780-dff4-11eb-8143-a22a91f0cffa.png)
 
 
@@ -62,7 +65,7 @@ MobileNet is a class of CNN that was open-sourced by Google, and therefore, this
 ### Output-4 for MobileNet model
 ![Screenshot (105)](https://user-images.githubusercontent.com/66901757/124784447-91743300-df63-11eb-8bd6-90c69520d29c.png)
 
-#### Time taken for training by MobileNet model is 57.9052 seconds.
+#### Time taken for training by MobileNet model is 115.8361 seconds.
 ![Screenshot (127)](https://user-images.githubusercontent.com/66901757/124892436-81a62e80-dff7-11eb-9692-1a6ddb40573b.png)
 
 
@@ -82,7 +85,7 @@ ResNet is one of the most powerful deep neural networks which has achieved fanta
 ### Output-4 for ResNet101 model
 ![Screenshot (117)](https://user-images.githubusercontent.com/66901757/124787290-0183b880-df66-11eb-8abc-38cfdec93623.png)
 
-#### Time taken for training by ResNet101 model is 246.5761 seconds.
+#### Time taken for training by ResNet101 model is 488.8327 seconds.
 ![Screenshot (130)](https://user-images.githubusercontent.com/66901757/124897638-1e6acb00-dffc-11eb-9b34-2d43269eaaa0.png)
 
 
@@ -107,7 +110,7 @@ Inception-v3 is a convolutional neural network architecture from the Inception f
 ### Output-4 for InceptionV3 model
 ![Screenshot (123)](https://user-images.githubusercontent.com/66901757/124788514-0a28be80-df67-11eb-8a1c-ba51ff3df9df.png)
 
-#### Time taken for training by InceptionV3 model is 210.2151 seconds.
+#### Time taken for training by InceptionV3 model is 419.4781 seconds.
 ![Screenshot (132)](https://user-images.githubusercontent.com/66901757/124899592-e9f80e80-dffd-11eb-9a23-8b3cc7f00526.png)
 
 
@@ -122,7 +125,7 @@ It can be noted from the examples above that the MobileNet model seems to be the
 Hence we'll be using this model to train our data.
 
 
-## Week 3 
+## Week-3 
 (23th June- 30th June 2021)
 #### Abstract
 After testing various models, we've concluded that the MobileNet model seems to be the most efficient model. Next, we'll be creating a prototype using the MobileNet model and test it on various examples.
@@ -151,12 +154,12 @@ You can visit the prototype here- https://github.com/TrunnMosby/GSoC-RedHenLabs-
 
 
 
-## Week 4 
+## Week-4 
 (1st July- 8th July 2021) <br />
 Note- The dataset has been updated, and more images have been added.
 #### Abstract
 The updated dataset contains 1291 images. Now the new dataset has to be trained again. We'll again be using the MobileNet model to do so, and check the impact of increasing the size of the dataset on training time and accuracy. 
-#### Time taken for training the updated dataset by MobileNet model is 59.8281 seconds.
+#### Time taken for training the updated dataset by MobileNet model is 117.6357 seconds.
 ![Screenshot (154)](https://user-images.githubusercontent.com/66901757/125607858-0e53913f-9d8f-4010-879c-e37ce31539fc.png)
 #### Test Output-1
 ![Screenshot (101)](https://user-images.githubusercontent.com/66901757/124784045-2e829c00-df63-11eb-9ee1-79988e6bd526.png)
@@ -168,19 +171,48 @@ The updated dataset contains 1291 images. Now the new dataset has to be trained 
 ![Screenshot (157)](https://user-images.githubusercontent.com/66901757/125608298-3c5efe81-ba67-41d6-b64e-d2b60ad05c50.png)
 
 ### Conclusion
-It can be noted that the training time has increased by 1.9229 seconds and with almost no change in accuracy.   
+It can be noted that the training time has increased by 1.7996 seconds and with almost no change in accuracy.   
 
 ### Tasks Accomplished:-
   1. Using the updated dataset to train the model.
   2. Checking the impact of increasing the size of the dataset on training time and accuracy. 
 
-## Week 5 
+## Week-5 
 (9th July- 16th July 2021) <br />
+#### Abstract
+The existing dataset still doesn't contain more than one image per label, so to overcome this problem, we'll be using the technique of data augmentation to generate similar images. Data augmentation is a strategy that enables practitioners to significantly increase the diversity of data available for training models without actually collecting new data. Data augmentation techniques such as cropping, padding, and horizontal flipping are commonly used to train large neural networks.
+#### Example of Data Augmentation
+![da](https://user-images.githubusercontent.com/66901757/126774282-1a18bef9-23da-44f6-87b6-f889214cd8e3.png)<br />
+Using Data Augmentation, we've created five copies of each image using different orientations. Now the size of the dataset has increased to 6473 images. Again we'll be using the MobileNet model to train the model on the new dataset and check its accuracy. The data augmentation is done using ImageDataGenerator and all the parameters are mentioned below-
+ImageDataGenerator(rotation_range=40,width_shift_range=0.2,height_shift_range=0.2,
+                           shear_range=0.2,zoom_range=0.2,horizontal_flip=True)
+#### Test Output-1
+![Screenshot (168)](https://user-images.githubusercontent.com/66901757/126773631-f7c4ee7d-4b15-4fa9-8156-1521fc3c96b8.png)
+#### Test Output-2
+![Screenshot (169)](https://user-images.githubusercontent.com/66901757/126773667-0eee9568-8a34-41b9-b2f4-74fa976f3451.png)
 
-  
+#### Test Output-3
+![Screenshot (170)](https://user-images.githubusercontent.com/66901757/126773702-ea06c53b-d9a0-4979-ae3d-9eddf75c187d.png)
+
+#### Test Output-4
+![Screenshot (171)](https://user-images.githubusercontent.com/66901757/126773730-cc305229-7645-411f-97a5-140a0be798c4.png)
+
+#### Test Output-5
+![Screenshot (172)](https://user-images.githubusercontent.com/66901757/126773766-1b337b5f-7223-45f6-8555-cc5f1e0c1020.png)
+
+#### Test Output-6
+![Screenshot (173)](https://user-images.githubusercontent.com/66901757/126773796-43a8f86e-91b9-4a44-8c19-a37372e9598a.png)
+
+#### Time taken for training the Augmented dataset by MobileNet model is 717.2585 seconds.
+![Screenshot (174)](https://user-images.githubusercontent.com/66901757/126774750-e062cdc6-9c9a-4a45-9061-a0d9d363b350.png)
+
+### Tasks Accomplished:-
+  1. Generating more images using Data Augmentation techniques. 
+  2. Training the MobileNet model on the Augmented dataset and checking it's accuracy.
 
 
-
+## Week-6
+(17th July- 23rd July 2021) <br />
 
 
          
