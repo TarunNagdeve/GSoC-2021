@@ -15,6 +15,11 @@ This project aims to develop a recognition system that'll identify Aztec glyphs.
 * [Week 5 (9th July- 16th July 2021)](#Week-5)
 #### Coding Period After the First Evaluation
 * [Week 6 (17th July- 23rd July 2021)](#Week-6)
+* [Week 7 (24th July- 31st July 2021)](#Week-7)
+* [Week 8 (1st August-  8th August 2021)](#Week-8)
+* [Week 9 (9th August- 16th August 2021)](#Week-9)
+* [Week 10 (17th August- 23rd August 2021)](#Week-10) 
+
 
 
 ## Week-1
@@ -203,7 +208,7 @@ ImageDataGenerator(rotation_range=40,width_shift_range=0.2,height_shift_range=0.
 #### Test Output-6
 ![Screenshot (173)](https://user-images.githubusercontent.com/66901757/126773796-43a8f86e-91b9-4a44-8c19-a37372e9598a.png)
 
-#### Time taken for training the Augmented dataset by MobileNet model is 717.2585 seconds.
+#### Time taken for training the Augmented dataset by MobileNet model is 717.2585 seconds or 11.9543 minutes.
 ![Screenshot (174)](https://user-images.githubusercontent.com/66901757/126774750-e062cdc6-9c9a-4a45-9061-a0d9d363b350.png)
 
 ### Tasks Accomplished:-
@@ -213,6 +218,73 @@ ImageDataGenerator(rotation_range=40,width_shift_range=0.2,height_shift_range=0.
 
 ## Week-6
 (17th July- 23rd July 2021) <br />
+#### Abstract
+We'll now train the augmented images dataset using VGG16 model.
+#### Test Output-1
+![Screenshot (182)](https://user-images.githubusercontent.com/66901757/129734303-844cba18-d7f0-4264-b84b-fc5a1b0f8518.png)
+#### Test Output-2
+![Screenshot (183)](https://user-images.githubusercontent.com/66901757/129734393-e40425e2-3fbc-4a3d-94e7-7c0779335d0b.png)
+#### Test Output-3
+![Screenshot (184)](https://user-images.githubusercontent.com/66901757/129734438-eda25df6-8309-48de-ae63-1e3263737da1.png)
+#### Test Output-4
+![Screenshot (185)](https://user-images.githubusercontent.com/66901757/129734476-1c16691f-0e5a-4764-846e-961d1714f95f.png)
+#### Test Output-5
+![Screenshot (186)](https://user-images.githubusercontent.com/66901757/129734552-2b8e6829-dc37-4dbb-a03b-39fa4d2a1f35.png)
+#### Time taken for training the Augmented dataset by VGG16 model is 6697.024 seconds or 111.61 minutes.
+![Screenshot (187)](https://user-images.githubusercontent.com/66901757/129734619-d5103eec-70e7-4b6d-b50a-634739785fdb.png)
+
+
+## Week-7
+(24th July- 31st July 2021) <br />
+#### Abstract
+We'll now train the augmented images dataset using InceptionV3 model.
+#### Test Output-1
+![Screenshot (189)](https://user-images.githubusercontent.com/66901757/129736726-89386e2b-e2f1-49ea-bacb-6c780800d6be.png)
+
+#### Test Output-2
+![Screenshot (190)](https://user-images.githubusercontent.com/66901757/129736817-b5c5a07d-e6bc-4754-b1f0-c475eedb38b7.png)
+
+#### Test Output-3
+![Screenshot (191)](https://user-images.githubusercontent.com/66901757/129736901-349739e0-8e1c-4c9b-a3bf-344c44d0237f.png)
+
+#### Test Output-4
+![Screenshot (192)](https://user-images.githubusercontent.com/66901757/129737135-dffae598-2961-4f03-b5fc-e5024384bc9f.png)
+
+#### Test Output-5
+![Screenshot (193)](https://user-images.githubusercontent.com/66901757/129737262-051886dc-c4c5-4392-aaef-742621509c34.png)
+
+#### Time taken for training the Augmented dataset by InceptionV3 model is 2348.7055 seconds or 39.145 minutes.
+![Screenshot (188)](https://user-images.githubusercontent.com/66901757/129737332-441793ea-d613-4b95-b5bb-6ff2b8cfd919.png)
+
+## Week-8
+(1st August-  8th August 2021) <br />
+#### Abstract
+We'll now train the augmented images dataset using ResNet101 model.
+#### Test Output-1
+![Screenshot (201)](https://user-images.githubusercontent.com/66901757/129738793-3527c94b-5126-42f3-98e3-7ea14903bad1.png)
+#### Test Output-2
+![Screenshot (202)](https://user-images.githubusercontent.com/66901757/129738885-74451401-90d2-4d9f-a43e-10ba3c6318a7.png)
+#### Test Output-3
+![Screenshot (203)](https://user-images.githubusercontent.com/66901757/129739014-24234b38-6927-42ee-83f8-6cd274cb8045.png)
+#### Test Output-4
+![Screenshot (204)](https://user-images.githubusercontent.com/66901757/129739079-ddff0f5f-e09c-44a8-a21f-9a4166c600ec.png)
+#### Test Output-5
+![Screenshot (205)](https://user-images.githubusercontent.com/66901757/129739136-27e62f73-45cd-45a2-9d3b-b667959a1586.png)
+#### Time taken for training the Augmented dataset by ResNet101 model is 3825.0867 seconds or 63.751445 minutes.
+![Screenshot (200)](https://user-images.githubusercontent.com/66901757/129739206-c024f387-ce8b-45bb-9b63-138861a2b96b.png)
+
+## Week-9
+(9th August-  16th August 2021) <br />
+#### Abstract
+After testing all the models we come to the conclusion that apart from InceptionV3 all other models are performing well. Though the time taken by each model is very high when compared to MobileNet model. We can still compare the performance of all the models by computing the error from the original values, here we'll take the augmented images as the closest image and calculate the distance from them, then we'll train the models on dataset without augmented images and calculate the deviation between them.
+Ranking of the models based on both performance and time taken:-
+1. MobileNet
+2. ResNet101
+3. VGG16
+4. InceptionV3
+
+
+
 
 
          
