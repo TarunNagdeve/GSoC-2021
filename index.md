@@ -286,7 +286,8 @@ Ranking of the models based on both performance and time taken:-
 (17th August-  23rd August 2021) <br />
 #### Abstract
 After testing our dataset on all the models, the final task is to deploy the model online. This task has been done by my partner Lisardo P. Lugones. We've used the MobileNet model for backend programming. You can visit https://github.com/lisardop/GSoC2021 and follow the steps written to use the website.
-
+### Conclusion
+We've successfully created a Visual Recognition system for Aztec Glyph Detection and Deployed it online.
 
 
 
