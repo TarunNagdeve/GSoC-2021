@@ -282,6 +282,7 @@ Ranking of the models based on both performance and time taken:-
 2. ResNet101
 3. VGG16
 4. InceptionV 
+
 ## Week-10
 (17th August-  23rd August 2021) <br />
 #### Abstract
