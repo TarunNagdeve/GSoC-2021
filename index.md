@@ -4,7 +4,7 @@
 ## Welcome to the project- "Development of Visual Recognition Model for Aztec Hieroglyphs."
 This project is developed by Tarun Subhash Nagdeve for Google Summer of Code 2021 with Red Hen Labs
 ### Project Description
-This project aims to develop a recognition system that'll identify Aztec glyphs. Aztec is pictographic and ideographic photo-writing. It has no alphabets but different symbolic signs that have different meanings. The dataset currently consists of 1255 color images and growing. The dataset contains three types of images: Simplex, Compound, and Atomic images. As the name, suggests Simplex and Atomic contain simple and atomic images, respectively, and Compound images are the combination of simple and atomic ones. So the main task here would be creating a neural network that'll take in an image, compare it with the ones in our system, and finally give out the five most similar images matching with the input image. Here, we'll be using pre-trained Neural Networks for training our model, like MobileNet, InceptionV3, VGG16, etc. And finally, the trained model will be deployed online so that it's accessible easily. 
+This project aims to develop a recognition system that'll identify Aztec glyphs. Aztec is pictographic and ideographic photo-writing. It has no alphabets but different symbolic signs that have different meanings. The dataset currently consists of 1255 color images and growing. The dataset contains three types of images: Simplex, Compound, and Atomic images. As the name, suggests Simplex and Atomic contain simple and atomic images, respectively, and Compound images are the combination of simple and atomic ones. So the main task here would be creating a neural network that'll take in an image, compare it with the ones in our system, and finally give out the five most similar images matching with the input image. Here, we'll be using pre-trained Neural Networks for training our model, like MobileNet, InceptionV3, VGG16 and ResNet101 models. And finally, the trained model will be deployed online so that it's accessible easily. 
 
 ### Timeline
 #### Coding Period Before the First Evaluation
@@ -281,8 +281,11 @@ Ranking of the models based on both performance and time taken:-
 1. MobileNet
 2. ResNet101
 3. VGG16
-4. InceptionV3
-
+4. InceptionV 
+## Week-10
+(17th August-  23rd August 2021) <br />
+#### Abstract
+After testing our dataset on all the models, the final task is to deploy the model online. This task has been done by my partner Lisardo P. Lugones. We've used the MobileNet model for backend programming. You can visit https://github.com/lisardop/GSoC2021 and follow the steps written to use the website.
 
 
 
