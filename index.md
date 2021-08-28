@@ -286,7 +286,16 @@ Ranking of the models based on both performance and time taken:-
 ## Week-10
 (17th August-  23rd August 2021) <br />
 #### Abstract
-After testing our dataset on all the models, the final task is to deploy the model online. This task has been done by my partner Lisardo P. Lugones. We've used the MobileNet model for backend programming. You can visit https://github.com/lisardop/GSoC2021 and follow the steps written to use the website.
+After testing our dataset on all the models, the final task is to deploy the model online. This task has been done by my partner Lisardo P. Lugones. We've used the MobileNet model for backend programming. You can visit the wesite here- https://aztecglyphrecognition.herokuapp.com/.
+#### Testing the Website
+![Screenshot (222)](https://user-images.githubusercontent.com/66901757/131215696-5ea45b93-2ae0-4b1b-b235-c2ef2b4f939b.png)
+![Screenshot (221)](https://user-images.githubusercontent.com/66901757/131215730-5cda7550-6a79-4476-a6f5-b4ac838f99c6.png)
+![Screenshot (220)](https://user-images.githubusercontent.com/66901757/131215745-f80b248f-61c1-407f-832c-a228a0451ffc.png)
+![Screenshot (219)](https://user-images.githubusercontent.com/66901757/131215773-44bf60e0-9910-4106-99a9-1dae227614db.png)
+![Screenshot (216)](https://user-images.githubusercontent.com/66901757/131215791-2310aa09-faa4-4cba-89c6-5c2ae0cc1554.png)
+![Screenshot (224)](https://user-images.githubusercontent.com/66901757/131215887-d21094d2-779e-45ea-8228-ad2463fa77ae.png)
+
+
 ### Conclusion
 We've successfully created a Visual Recognition system for Aztec Glyph Detection and Deployed it online.
 
