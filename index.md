@@ -277,11 +277,21 @@ We'll now train the augmented images dataset using ResNet101 model.
 (9th August-  16th August 2021) <br />
 #### Abstract
 After testing all the models we come to the conclusion that apart from InceptionV3 all other models are performing well. Though the time taken by each model is very high when compared to MobileNet model. We can still compare the performance of all the models by computing the error from the original values, here we'll take the augmented images as the closest image and calculate the distance from them, then we'll train the models on dataset without augmented images and calculate the deviation between them.
-Ranking of the models based on both performance and time taken:-
+#### Error
+![Screenshot (228)](https://user-images.githubusercontent.com/66901757/131256264-1c95cc8e-1f07-4692-b555-91f69bc6b869.png)
+
+
+Ranking of the models based on performance:-
+1. InceptionV3
+2. ResNet101
+3. MobileNet
+4. VGG16
+
+Ranking of the models based on time taken:-
 1. MobileNet
 2. ResNet101
 3. VGG16
-4. InceptionV 
+4. InceptionV3
 
 ## Week-10
 (17th August-  23rd August 2021) <br />
